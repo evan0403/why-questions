@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Questions</title>
+  <style>
+
+  
+    @font-face {
+      font-family: 'editorial';
+      src: url('editorial-new-regular.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'lausanne';
+      src: url('Lausanne-Regular.otf') format('opentype');
+    }
+
+    body {
+      font-family: 'editorial', serif, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #282c35;
+      color: rgb(255, 255, 255);
+      overflow-y: auto;
+      
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-y: auto;
+    }
+
+    h1 {
+      font-size: 64px;
+      font-family: 'lausanne', sans-serif;
+    }
+
+    h1 {
+  background: linear-gradient(45deg, #0D07F9, #F47C8A);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 64px;
+  font-family: 'lausanne', sans-serif;
+}
+
+   .grid {
+      display: flex;
+      flex-wrap: wrap;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 200px;
+      height: 200px;
+      background-color: #0a0a0a;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      font-family: 'editorial', serif;
+      border: 2px solid;
+      position: relative;
+      text-align: center; /* Center-align the text inside the card */
+    }
+
+   
+
+.card:hover {
+  animation: bounce 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  transform: scale(1.1);
+  background-color: #1212123b;
+  color: #F47C8A;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+    .interrogative-word {
+      font-family: 'editorial', serif;
+    }
+
+    .card a {
+      color: inherit; /* Inherit the color from the parent (white) */
+      text-decoration: none; /* Remove underline */
+      display: block; /* Make the entire card clickable */
+      height: 100%; /* Make the link fill the entire card */
+    }
+
+    .card.one { border-color: #0D07F9; }
+    .card.two { border-color: #3219E8; }
+    .card.three { border-color: #3D1FE3; }
+    .card.four { border-color: #4724DD; }
+    .card.five { border-color: #522AD8; }
+    .card.six { border-color: #5D2FD3; }
+    .card.seven { border-color: #6835CE; }
+    .card.eight { border-color: #733AC9; }
+    .card.nine { border-color: #7D40C3; }
+    .card.ten { border-color: #8845BE; }
+    .card.eleven { border-color: #934BB9; }
+    .card.twelve { border-color: #9E50B4; }
+    .card.thirteen { border-color: #A856AE; }
+    .card.fourteen { border-color: #B35BA9; }
+    .card.fifteen { border-color: #BE61A4; }
+    .card.sixteen { border-color: #C9669F; }
+    .card.seventeen { border-color: #DE7194; }
+    .card.eighteen { border-color: #F47C8A; }
+
+
+  /* Media query for iPad */
+@media (min-width: 376px) and (max-width: 1024px) {
+  body {
+    background-color: #ffffff; /* White color for iPad */
+    transition: 1s;
+  }
+
+  /* Change card background color to white and text color to black */
+  .card {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 1s;
+  }
+
+  /* Add hover styles for the changed card colors */
+  .card:hover {
+    background-color: #ffffff;
+    color: #000000; 
+  }
+  /* Add some margin to the bottom */
+  .grid {
+    margin-bottom: 30px;
+  }
+}
+
+    /* Media query for desktop */
+    @media (min-width: 1025px) {
+      body {
+        background-color: #000000; 
+        transition: 1s;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Most Asked Google Question for <span class="interrogative-word">"Why"</span></h1>
+    <div class="grid">
+      <div class="card one"><a href="https://www.google.com/search?q=Why+is+the+sky+blue?" target="_blank">Why is the sky blue?</a></div>
+      <div class="card two"><a href="https://www.google.com/search?q=Why+do+we+dream?" target="_blank">Why do we dream?</a></div>
+      <div class="card three"><a href="https://www.google.com/search?q=Why+is+the+ocean+salty?" target="_blank">Why is the ocean salty?</a></div>
+      <div class="card four"><a href="https://www.google.com/search?q=Why+do+we+yawn?" target="_blank">Why do we yawn?</a></div>
+      <div class="card five"><a href="https://www.google.com/search?q=Why+do+we+age?" target="_blank">Why do we age?</a></div>
+      <div class="card six"><a href="https://www.google.com/search?q=Why+is+the+grass+green?" target="_blank">Why is the grass green?</a></div>
+      <div class="card seven"><a href="https://www.google.com/search?q=Why+do+we+laugh?" target="_blank">Why do we laugh?</a></div>
+      <div class="card eight"><a href="https://www.google.com/search?q=Why+do+we+sleep?" target="_blank">Why do we sleep?</a></div>
+      <div class="card nine"><a href="https://www.google.com/search?q=Why+is+the+earth+round?" target="_blank">Why is the earth round?</a></div>
+      <div class="card ten"><a href="https://www.google.com/search?q=Why+were+cornflakes+invented?" target="_blank">Why were cornflakes invented?</a></div>
+      <div class="card eleven"><a href="https://www.google.com/search?q=Why+not?" target="_blank">Why not?</a></div>
+      <div class="card twelve"><a href="https://www.google.com/search?q=Why+is+my+poop+green?" target="_blank">Why is my poop green?</a></div>
+      <div class="card thirteen"><a href="https://www.google.com/search?q=Why+not+me?" target="_blank">Why not me?</a></div>
+      <div class="card fourteen"><a href="https://www.google.com/search?q=Why+are+you+always+in+a+mood?" target="_blank">Why are you always in a mood?</a></div>
+      <div class="card fifteen"><a href="https://www.google.com/search?q=Why+am+I+so+tired?" target="_blank">Why am I so tired?</a></div>
+      <div class="card sixteen"><a href="https://www.google.com/search?q=Why+do+bad+things+happen+to+good+people?" target="_blank">Why do bad things happen to good people?</a></div>
+      <div class="card seventeen"><a href="https://www.google.com/search?q=Why+should+we+hire+you?" target="_blank">Why should we hire you?</a></div>
+      <div class="card eighteen"><a href="https://www.google.com/search?q=Why+do+cats+purr?" target="_blank">Why do cats purr?</a></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
